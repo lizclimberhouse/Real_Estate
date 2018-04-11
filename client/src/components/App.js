@@ -9,6 +9,10 @@ import ProtectedRoute from './ProtectedRoute';
 import AuthRoute from './AuthRoute';
 import FetchUser from './FetchUser';
 import { Switch, Route } from 'react-router-dom';
+import Available from './Available';
+import Cities from './Cities';
+import FindHome from './FindHome';
+import CityCost from './CityCost';
 
 class App extends Component {
   render() {
@@ -19,6 +23,10 @@ class App extends Component {
         <FetchUser>
           <Switch>
             <Route exact path='/' component={Home} />
+            <Route exact path='/available' component={Available} />
+            <Route exact path='/cities' component={Cities} />
+            <Route exact path='/find_home' component={FindHome} />
+            <Route exact path='/city_cost' component={CityCost} />
             <AuthRoute exact path='/login' component={Login} />
             <AuthRoute exact path='/register' component={Register} />
             <Route component={NoMatch} />

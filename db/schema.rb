@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 20180411154402) do
     t.string "first_name"
     t.string "last_name"
     t.string "email"
-    t.string "photo"
+    t.string "phone"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -38,7 +38,7 @@ ActiveRecord::Schema.define(version: 20180411154402) do
     t.string "first_name"
     t.string "last_name"
     t.string "email"
-    t.string "photo"
+    t.string "phone"
     t.float "max_price"
     t.text "cities"
     t.bigint "agent_id"
